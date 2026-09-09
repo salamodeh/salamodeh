@@ -20,6 +20,10 @@
 End-to-end cloud-native pipeline: dlt ingestion (CSVs + 2 live APIs) → DuckDB → dbt (9 models, 21 tests) → daily GitHub Actions automation → public dashboard. Includes a real production lesson — found and fully remediated an exposed cloud credential, with complete git history cleanup.  
 [Code](https://github.com/salamodeh/olist-data-pipeline) · [Live dashboard](https://datastudio.google.com/reporting/bdc37536-654b-44c0-80a6-ad0e2796684a/page/X2b1F)
 
+**Prediction of product sales**
+End-to-end CRISP-DM project on 8,523 retail product-outlet records. A tuned Random Forest regression explains 60% of sales variance (R² = 0.597, ±$734 MAE), and a companion classification model flags high-sellers at 81% accuracy / 87% recall. `Item_MRP` and `Outlet_Type` are the two strongest, triple-validated drivers of sales.
+[Code](https://github.com/salamodeh/prediction-of-product-sales-project)
+
 **Car insurance claim prediction**
 Classification project predicting auto insurance claims from driving history, demographics, and vehicle data (10,000 policyholders). Compared a baseline Random Forest, a PCA + clustering engineered Random Forest, and a Keras neural network — all within 1.5 F1 points of each other, with the engineered Random Forest recommended for production. Includes a fairness check confirming the model doesn't lean on race, gender, or age.
 [Code](https://github.com/salamodeh/car-insurance-claim-prediction)
