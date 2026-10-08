@@ -33,6 +33,10 @@ End-to-end CRISP-DM project on 8,523 retail product-outlet records. A tuned Rand
 Classification project predicting auto insurance claims from driving history, demographics, and vehicle data (10,000 policyholders). Compared a baseline Random Forest, a PCA + clustering engineered Random Forest, and a Keras neural network, all within 1.5 F1 points of each other, with the engineered Random Forest recommended for production. Includes a fairness check confirming the model doesn't lean on race, gender, or age.
 [Code](https://github.com/salamodeh/car-insurance-claim-prediction)
 
+**Diabetes prevalence prediction (CDC PLACES)**  
+Team capstone (3 people, AXSOS Academy) predicting neighborhood-level diabetes prevalence across 78,784 U.S. census tracts from 39 CDC health, disability, and social-needs indicators. I owned the modeling: Linear Regression vs Gradient Boosting vs a GridSearchCV-tuned Random Forest (test R² = 0.986, ±0.35 pp MAE). Mobility disability, high blood pressure, and stroke were the strongest signals. The write-up is explicit that the near-perfect fit largely reflects all PLACES measures coming from one CDC estimation model, so findings are neighborhood-level associations, not causal or individual-level predictions.  
+[Code](https://github.com/salamodeh/places-health-project)
+
 **On-premise Oracle to Snowflake migration**  
 Contributed as part of a cross-functional team to migrate Bank of Palestine's on-premise data warehouse to Snowflake, re-mapped ETL workflows from Oracle Data Integrator, validated migrated data, and supported performance tuning across 500+ downstream reports.
 
